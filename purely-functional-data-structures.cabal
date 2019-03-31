@@ -13,7 +13,8 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Queue
+  exposed-modules:     BottomUpMergeSort
+                     , Queue
   build-depends:       base >= 4.7 && < 5
   default-language:    Haskell2010
 
@@ -21,7 +22,8 @@ test-suite purely-functional-data-structures-test
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
-  other-modules:       QueueSpec
+  other-modules:       BottomUpMergeSortSpec
+                     , QueueSpec
   build-depends:       base
                      , purely-functional-data-structures
                      , hspec
